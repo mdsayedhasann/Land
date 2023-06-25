@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Katha to Gonda Converter</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      display: inline-block;
+      width: 100px;
+    }
+    .form-group input {
+      width: 200px;
+      padding: 5px;
+    }
+    .form-group .result {
+      font-weight: bold;
+      color: #009900;
+    }
+    .form-group button {
+      padding: 5px 10px;
+      background-color: #009900;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Katha to Gonda Converter</h2>
+    <div class="form-group">
+      <label for="katha">Katha:</label>
+      <input type="number" id="katha" min="0" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="gonda">Gonda:</label>
+      <input type="number" id="gonda" min="0" step="0.01">
+    </div>
+    <div class="form-group">
+      <button onclick="convertKathaToGonda()">Convert</button>
+    </div>
+    <div class="form-group">
+      <label>Result:</label>
+      <span class="result" id="result"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
